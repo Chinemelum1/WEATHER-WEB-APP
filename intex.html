@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>WEATHER APP</title>
+  </head>
+  <body>
+    <div class="weather">
+      <div class="sidepanel">
+        <div class="logo">
+          <img
+            src="Assets/Images/Colorful_3d_Weather_Forecast_IOS_Icon_Set_-_Templates_by_Canva-removebg-preview.png"
+            height="70px"
+            width="70px"
+          />
+        </div>
+        <div class="navigation">
+          <div class="nav">
+            <i class="material-icons">cloud</i>
+            <p><b>Weather</b></p>
+          </div>
+          <div class="nav">
+            <i class="material-icons" id="map" style="color: gray"
+              >format_list_bulleted</i
+            >
+            <p style="color: gray">Cities</p>
+          </div>
+          <div class="nav">
+            <i class="material-icons" id="map" style="color: gray">map</i>
+            <p style="color: gray">Map</p>
+          </div>
+          <div class="nav">
+            <i class="material-icons" style="color: gray">settings</i>
+            <p style="color: gray">Settings</p>
+          </div>
+        </div>
+      </div>
+      <div class="statics">
+        <div class="search">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for location here..."
+          />
+          <!-- <button onclick="search()">
+            <i class="material-icons">search</i>
+          </button>
+          <p id="output"></p> -->
+          <!-- <div class="avatar">
+            <img
+              src="Assets/Images/3D ANIMATION.jpg"
+              height="45px"
+              width="45px"
+            />
+          </div> -->
+          <button class="dark"><i class="material-icons">toll</i></button>
+        </div>
+        <div class="sun">
+          <div class="mad">
+            <div class="city">
+              <p id="madrid">Madrid</p>
+              <p id="rain">Chance of rain 10%</p>
+            </div>
+            <p id="lipp">60°</p>
+          </div>
+          <img src="Assets/Images/Sunshine.png" height="200px" width="200px" />
+        </div>
+        <div class="forcast">
+          <p><b>TODAY'S FORCAST</b></p>
+          <div class="forcastlist">
+            <div class="listpart">
+              <p class="yes">6:00 AM</p>
+              <img src="Assets/Images/cloudy.png" height="30px" width="30px" />
+              <p class="yess">25°</p>
+            </div>
+            <div class="listpart">
+              <p class="yes">9:00 AM</p>
+              <img
+                src="Assets/Images/sunand cloud.png"
+                height="30px"
+                width="30px"
+              />
+              <p class="yess">28°</p>
+            </div>
+            <div class="listpart">
+              <p class="yes">12:00 PM</p>
+              <img
+                src="Assets/Images/Sunshine.png"
+                height="30px"
+                width="30px"
+              />
+              <p class="yess">33°</p>
+            </div>
+            <div class="listpart">
+              <p class="yes">3:00 PM</p>
+              <img
+                src="Assets/Images/Sunshine.png"
+                height="30px"
+                width="30px"
+              />
+              <p class="yess">34°</p>
+            </div>
+            <div class="listpart">
+              <p class="yes">6:00 PM</p>
+              <img
+                src="Assets/Images/Sunshine.png"
+                height="30px"
+                width="30px"
+              />
+              <p class="yess">32°</p>
+            </div>
+            <div class="listpart">
+              <p class="yes">9:00 PM</p>
+              <img
+                src="Assets/Images/sunand cloud.png"
+                height="30px"
+                width="30px"
+              />
+              <p class="yess">30°</p>
+            </div>
+          </div>
+        </div>
+        <div class="air">
+          <div class="heading">
+            <p><b>AIR CONDITIONS</b></p>
+            <button>See more</button>
+          </div>
+          <div class="hold">
+            <div class="first">
+              <div class="thresh">
+                <div class="icon">
+                  <img
+                    src="Assets/Images/thermometer.png"
+                    height="24px"
+                    width="24px"
+                  />
+                  <p class="yes">Real Feel</p>
+                </div>
+                <p class="once">30°</p>
+              </div>
+              <div class="thresh">
+                <div class="icon">
+                  <img
+                    src="Assets/Images/rain.png"
+                    height="24px"
+                    width="24px"
+                  />
+                  <p class="yes">Chance of rain</p>
+                </div>
+                <p class="once">0%</p>
+              </div>
+            </div>
+            <div class="first">
+              <div class="thresh">
+                <div class="icon">
+                  <img
+                    src="Assets/Images/wind.png"
+                    height="24px"
+                    width="24px"
+                  />
+                  <p class="yes">wind</p>
+                </div>
+                <p class="once">0.2 km/h</p>
+              </div>
+              <div class="thresh">
+                <div class="icon">
+                  <img src="Assets/Images/uv.png" height="24px" width="24px" />
+                  <p class="yes">UV index</p>
+                </div>
+                <p class="once">3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="wforcast">
+        <p>7-DAY FORECAST</p>
+        <div class="days">
+          <div class="day">
+            <p>Today</p>
+            <div class="cond">
+              <img
+                src="Assets/Images/Sunshine.png"
+                height="10px"
+                width="10px"
+              />
+              <p>Sunny</p>
+            </div>
+            <p>34°</p>
+          </div>
+          <div class="day">
+            <p>Tue</p>
+            <div class="cond">
+              <img
+                src="Assets/Images/Sunshine.png"
+                height="10px"
+                width="10px"
+              />
+              <p>Sunny</p>
+            </div>
+            <p>34°</p>
+          </div>
+          <div class="day">
+            <p>Wed</p>
+            <div class="cond">
+              <img
+                src="Assets/Images/Sunshine.png"
+                height="10px"
+                width="10px"
+              />
+              <p>Sunny</p>
+            </div>
+            <p>34°</p>
+          </div>
+          <div class="day">
+            <p>Thu</p>
+            <div class="cond">
+              <img src="Assets/Images/cloudy.png" height="10px" width="10px" />
+              <p>Cloudy</p>
+            </div>
+            <p>25°</p>
+          </div>
+          <div class="day">
+            <p>Fri</p>
+            <div class="cond">
+              <img src="Assets/Images/cloudy.png" height="20px" width="20px" />
+              <p>Cloudy</p>
+            </div>
+            <p>25°</p>
+          </div>
+          <div class="day">
+            <p>Sat</p>
+            <div class="cond">
+              <img src="Assets/Images/rain2.png" height="20px" width="20px" />
+              <p>Rainy</p>
+            </div>
+            <p>20°</p>
+          </div>
+          <div class="day">
+            <p>Sun</p>
+            <div class="cond">
+              <img
+                src="Assets/Images/Sunshine.png"
+                height="20px"
+                width="20px"
+              />
+              <p>Sunny</p>
+            </div>
+            <p>34°</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <script>
+      let dark = document.querySelector(".dark");
+      dark.addEventListener("click", function () {
+        document.body.style.backgroundColor = "#0B111D";
+        document.querySelector(".sidepanel").style.backgroundColor = "#202C3C";
+        document.querySelector(".air").style.backgroundColor = "#202C3C";
+        document.querySelector(".forcast").style.backgroundColor = "#202C3C";
+        document.querySelector(".nav").style.backgroundColor = "#202C3C";
+        document.querySelector(".search").style.backgroundColor = "#202C3C";
+        document.querySelector(".map").style.backgroundColor = "#202C3C";
+        document.getElementById(".search").style.backgroundColor = "#202C3C";
+        document.body.style.color = "white";
+      });
+    </script>
+  </body>
+</html>
