@@ -42,16 +42,17 @@
         </div>
       </div>
       <div class="statics">
-        <div class="search">
+        <div class="searchbar">
           <input
             type="text"
-            id="search"
+            class="search"
             placeholder="Search for location here..."
           />
-          <!-- <button onclick="search()">
+          <button class="purrr">
             <i class="material-icons">search</i>
           </button>
-          <p id="output"></p> -->
+          <p id="output"></p>
+          <p class="error-message">Invalid city name</p>
           <!-- <div class="avatar">
             <img
               src="Assets/Images/3D ANIMATION.jpg"
@@ -62,14 +63,21 @@
           <button class="dark"><i class="material-icons">toll</i></button>
         </div>
         <div class="sun">
-          <div class="mad">
+          <div class="cities">
             <div class="city">
-              <p id="madrid">Madrid</p>
+              <p id="city">Madrid</p>
               <p id="rain">Chance of rain 10%</p>
             </div>
-            <p id="lipp">60°</p>
+            <p id="text">60°</p>
           </div>
-          <img src="Assets/Images/Sunshine.png" height="200px" width="200px" />
+          <div>
+            <img
+              class="weather-icon"
+              src="Assets/Images/Sunshine.png"
+              height="200px"
+              width="200px"
+            />
+          </div>
         </div>
         <div class="forcast">
           <p><b>TODAY'S FORCAST</b></p>
